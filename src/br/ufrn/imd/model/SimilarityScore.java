@@ -1,10 +1,10 @@
 package br.ufrn.imd.model;
 
-public class SimilarityMetric {
-	private String str1;
-	private String str2;
+public abstract class SimilarityScore {
+	protected String str1;
+	protected String str2;
 	
-	public SimilarityMetric() {}
+	public SimilarityScore() {}
 
 	public String getStr1() {
 		return str1;
@@ -22,8 +22,6 @@ public class SimilarityMetric {
 		this.str2 = str2;
 	}
 	
-	public double similarityScore() {
-		
-		return 1.1; 
-	}
+	abstract public double similarityScore();
+	
 }

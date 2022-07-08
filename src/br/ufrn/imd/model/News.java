@@ -1,6 +1,6 @@
 package br.ufrn.imd.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class News {
 	private int id;
@@ -38,8 +38,8 @@ public class News {
 	public Date getTimestamp() {
 		return timestamp;
 	}
-	public void setTimestamp(Date timestamp) {
-		this.timestamp = timestamp;
+	public void setTimestamp(Date timestamp2) {
+		this.timestamp = timestamp2;
 	}
 	
 	
